@@ -49,3 +49,12 @@ for valid in inf:
         print("\033[32;1m""Your full name is valid!")
     else:
         print("\033[31;1m""Enter valid full name!")
+
+# 5. PASSWORD (ADDITIONAL)
+
+inf = [input("Enter your password: ")]
+for valid in inf:
+    if re.match(r'^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[!@#$%^&*()_+])[A-Za-z\d!@#$%^&*()_+]{8,16}$', valid):
+        print("\033[32;1m""Your password is valid!")
+    else:
+        print("\033[31;1m""Enter valid password!")
